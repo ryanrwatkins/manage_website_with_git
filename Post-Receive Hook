@@ -1,0 +1,15 @@
+#! /bin/sh
+
+while read oldrev newrev ref
+do
+  # branch='echo $ref | cut -d/ -f3'
+branchname=${ref#refs/heads/}
+
+  if [ "main" = "$branch" ]; then
+  	git --work-tree=/var/www/public_html/main_site --git-dir=/home/user/bare_repo.git checkout -f 
+    echo 'Changes pushed to live main site.'
+  else
+  	git --work-tree=/home/user/dev_site --git-dir=/home/user/bare_repo.git checkout -f ${branchname}
+    echo 'Changes pushed to development site.'
+  fi
+done
