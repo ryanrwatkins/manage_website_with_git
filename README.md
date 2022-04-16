@@ -1,7 +1,10 @@
 # manage_website_with_git
-Manage the co-development of a website with Git. Use git to push website edits and to keep up-to-date version controls.  
+Manage the co-development of a website with Git. Use git to push website edits and to keep up-to-date version controls. 
 
-To get things set up, look at the flow image and follow the instructions on this website: https://gist.github.com/Nilpo/8ed5e44be00d6cf21f22  As the website manage you will want to set up (a) a development site, (b) a live site, and (c) a "bare" git repo what will hold the "hook" which send files to the appropriate place.  You will also want to create a user group on the server, put your other users into the group, and then give that group read-write permissions on all the three directories.
+![alt text](https://github.com/ryanrwatkins/manage_website_with_git/blob/main/manage_with_git_flow.png)
+
+
+To get things set up, look at the flow image above and follow the instructions on this website: https://gist.github.com/Nilpo/8ed5e44be00d6cf21f22  As the website manage you will want to set up (a) a development site, (b) a live site, and (c) a "bare" git repo what will hold the "hook" which send files to the appropriate place.  You will also want to create a user group on the server, put your other users into the group, and then give that group read-write permissions on all the three directories.
 
 Once you get it set up and working for you, then here are instructions for other users so they can also update the site and Github repo too.
 
