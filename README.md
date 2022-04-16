@@ -8,8 +8,8 @@ To get things set up, look at the flow image above and follow the instructions o
 
 Once you get it set up and working for you, then here are instructions for other users so they can also update the site and Github repo too.
 
->>>
-Instructions to send to other users:
+
+**Instructions to send to other users:**
 
 Step 1: Create SSH access without passwords (first time only). The best instructions I found were here: https://gist.github.com/Nilpo/8ed5e44be00d6cf21f22#su
 Basically you have to create an .ssh directory in the home directory on your computer (there is already one in your server home director). In this .ssh directory you then have to create public/private keys. And then you will push the public key to the server .ssh directory.  Then when you log in to the server with SSH the next time, it should just let you  enter without a password (using the public/private key pairing).
@@ -20,11 +20,11 @@ Step 3: Write code. Once you make changes locally you can either commit them Git
 
 Step 4: Start development site in virtual environment. When you have changes you want to check out on then development site to see how they work, you first have to restart the virtual env so that the development site will be live again.
 
-For my server, it is this process:
-Log into the server with SSH
-$  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 
-$  cd /dev-site/directory &&  source `which virtualenvwrapper.sh`
-$  python3 ./manage.py runserver 0.0.0.0:8080
+For my server, it is this process:<br/>
+Log into the server with SSH<br/>
+$  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 <br/>
+$  cd /dev-site/directory &&  source `which virtualenvwrapper.sh`<br/>
+$  python3 ./manage.py runserver 0.0.0.0:8080<br/>
 
 This will start the development environment server and you can access the site at:  mywebsite.com:8080    It will keep running until you  terminate the session or hit CTRL-C.
 
@@ -35,8 +35,8 @@ $  git push tutorials dev-site
 
 That should be it, your edits should show up on the development site for testing. Once you are happy, then you can push the new edits to GitHub and start a pull request.  When we all agree, then we can merge the dev-site branch with the main, and then update the  main version of the site.
 
->>>
-Also based on:
+
+**Also based on:<br/>**
 https://www.sitepoint.com/deploying-from-github-to-a-server/
 
 https://hackernoon.com/deploy-website-to-remote-server-using-git-da6048805637
