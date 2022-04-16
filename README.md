@@ -12,7 +12,7 @@ Once you get it set up and working for you, then here are instructions for other
 **Instructions to send to other users:**
 
 Step 1: Create SSH access without passwords (first time only). The best instructions I found were here: https://gist.github.com/Nilpo/8ed5e44be00d6cf21f22#su
-Basically you have to create an .ssh directory in the home directory on your computer (there is already one in your server home director). In this .ssh directory you then have to create public/private keys. And then you will push the public key to the server .ssh directory.  Then when you log in to the server with SSH the next time, it should just let you  enter without a password (using the public/private key pairing).
+Basically you have to create an .ssh directory in the home directory on your local computer (there is already one in your server home directory). In this .ssh directory you then have to create public/private keys. And then you will push the public key to the server .ssh directory.  Then when you log in to the server with SSH the next time, it should just let you  enter without a password (using the public/private key pairing).
 
 Step 2: On your local machine download the private Git repository for the project (first time only).  You can create branches off the dev-site branch, and then we will update and test things on this branch first, and if we will like them then we can move them to the main (which links to the live serve).  As usual, you will want to give you local git up to date with the Github version each time you make edits.  
 
