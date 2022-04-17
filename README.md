@@ -6,6 +6,8 @@ Manage the co-development of a website with Git. Use git to push website edits a
 
 To get things set up, look at the flow image above and follow the instructions on this website: https://gist.github.com/Nilpo/8ed5e44be00d6cf21f22  As the website manage you will want to set up (a) a development site, (b) a live site, and (c) a "bare" git repo what will hold the "hook" which send files to the appropriate place.  You will also want to create a user group on the server, put your other users into the group, and then give that group read-write permissions on all the three directories.
 
+Note that with Git installed on your local machine you should have a "remote repository pointing" to the Orgin on Github already, this is what allows you to push changes to Github, and now you are adding a second pointing script to push to your website's server.   You can list your "remote repository pointing" scripts by with 'git remote -v'.
+
 Once you get it set up and working for you, then here are instructions for other users so they can also update the site and Github repo too.
 
 
