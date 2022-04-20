@@ -25,7 +25,7 @@ Step 4: Start development site in virtual environment. When you have changes you
 For my server, it is this process:<br/>
 Log into the server with SSH<br/>
 $  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 <br/>
-$  cd /dev-site/directory &&  source `which virtualenvwrapper.sh`<br/>
+$  cd /dev-site/directory &&  source \'which virtualenvwrapper.sh\'<br/>
 $  python3 ./manage.py runserver 0.0.0.0:8080<br/>
 
 This will start the development environment server and you can access the site at:  mywebsite.com:8080    It will keep running until you  terminate the session or hit CTRL-C.
