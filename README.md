@@ -31,9 +31,9 @@ $  python3 ./manage.py runserver 0.0.0.0:8080<br/>
 This will start the development environment server and you can access the site at:  mywebsite.com:8080    It will keep running until you  terminate the session or hit CTRL-C.
 
 Step 5: Add a Remote Repository Pointing to the Web Server. Once you have a working repository, you'll have to add a remote pointing on your local machine to the one you set up on your server.
-On your local machine add...
-$  git remote add <name_for_remote_connection_point> ssh://<your-login-name>@mywebsite.com/home/user/directory/with/bare.git
-You can then use this to view all the remote connections point set for you git;
+On your local machine add...<br/>
+$  git remote add <name_for_remote_connection_point> ssh://<your-login-name>@mywebsite.com/home/user/directory/with/bare.git<br/>
+You can then use this to view all the remote connections point set for you git;<br/>
 $ git remote -v 
 
 Step 6: Push changes from local to development site. You can push you dev-site branch to the development site on the server using:  
