@@ -1,5 +1,5 @@
 # manage_website_with_git
-Manage the co-development of a website with Git. Use git to push website edits and to keep up-to-date version controls. 
+Manage the co-development of a website with Git. Use git to push website edits and to keep up-to-date version controls. This version sets up a development-site version of the website that gets co-edited first, and then later changes can be merged into the live website. You can just edit the main site by skipping the development site instructions (primiarly in Step 4).
 
 ![alt text](https://github.com/ryanrwatkins/manage_website_with_git/blob/main/manage_with_git_flow.png)
 
